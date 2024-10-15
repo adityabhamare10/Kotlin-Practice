@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,16 +35,10 @@ class MainActivity : AppCompatActivity() {
 
         btn.setOnClickListener{
 
-
-            result.setText("₹"+convert(editTextusd.text.toString().toDouble()).toString())
-
+            result.setText("₹"+(84.06*editTextusd.text.toString().toDouble().roundToInt()).toString())
 
         }
 
-    }
-
-    fun convert(usd:Double): Double{
-        return usd * 84.06
     }
 
 }
