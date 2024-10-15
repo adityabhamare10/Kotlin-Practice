@@ -55,6 +55,18 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onStop() {
+        super.onStop()
+
+        //release resources that should be closed when the activity is not active
+
+        Toast.makeText(this,
+            "onStop() is called",
+            Toast.LENGTH_SHORT
+        ).show()
+
+    }
+
 
 
 }
