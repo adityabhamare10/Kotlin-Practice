@@ -67,6 +67,16 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onRestart() {
+        super.onRestart()
+
+        Toast.makeText(this,
+            "onRestart() is called",
+            Toast.LENGTH_SHORT
+        ).show()
+
+    }
+
 
 
 }
