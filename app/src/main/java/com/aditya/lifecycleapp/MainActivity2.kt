@@ -27,5 +27,7 @@ class MainActivity2 : AppCompatActivity() {
         textView.text = "$msg"
 
 
+
+
     }
 }
