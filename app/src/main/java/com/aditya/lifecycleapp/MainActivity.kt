@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
             "onCreate() is called",
             Toast.LENGTH_SHORT
         ).show()
-
     }
 
     override fun onStart() {
@@ -77,6 +76,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        //Perform Final clean up
+    }
 
 
 }
