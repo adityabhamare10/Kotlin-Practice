@@ -45,6 +45,16 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onPause() {
+        super.onPause()
+
+        Toast.makeText(this,
+            "onPause() is called",
+            Toast.LENGTH_SHORT
+        ).show()
+
+    }
+
 
 
 }
