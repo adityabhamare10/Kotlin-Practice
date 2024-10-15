@@ -34,11 +34,8 @@ class MainActivity : AppCompatActivity() {
 
         btn.setOnClickListener{
 
-            var usd: String = editTextusd.text.toString()
 
-            var usdDoubled: Double = usd.toDouble()
-
-            result.setText("₹"+convert(usdDoubled).toString())
+            result.setText("₹"+convert(editTextusd.text.toString().toDouble()).toString())
 
 
         }
