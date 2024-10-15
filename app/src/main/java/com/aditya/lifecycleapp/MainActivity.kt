@@ -35,6 +35,16 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onResume() {
+        super.onResume()
+
+        Toast.makeText(this,
+            "onResume () is called",
+            Toast.LENGTH_SHORT
+        ).show()
+
+    }
+
 
 
 }
